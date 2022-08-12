@@ -58,7 +58,7 @@ while run:
     
     sun =  pygame.draw.circle(win, (255, 100, 0),(750, 750), 60, 0)
     
-    #drawing the plaents 
+    #drawing the planets 
     #and also lots and lots of math 
     #im losing brain cells and im only 50 lines in 
     
