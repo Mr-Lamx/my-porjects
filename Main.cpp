@@ -4,13 +4,13 @@
 #include<glm/glm.hpp>
 #include<glm/gtc/matrix_transform.hpp>
 #include<glm/gtc/type_ptr.hpp>
-
+//this is just a simple c++/opengl test project that loads a bunch of cubes to the screen and makes the spin
 int main()
 {
 
 	glfwInit();
 
-
+//yes i didn't make a seperate shader class because i am lazy i just made a variable containing the shader source code
 	const char* vertexShaderSource = "#version 330 core\n"
 		"layout (location = 0) in vec3 aPos;\n"
 		"layout (location = 1) in vec3 aColor;\n"
@@ -32,7 +32,7 @@ int main()
 		"{\n"
 		"   FragColor = vec4(ourColor, 1.0f);\n"
 		"}\n\0";
-
+//and i didn't specify any indecies ecause again i am lazy af
 	float vertices[] = {
 	-0.5f, -0.5f, -0.5f,  1.0f, 1.0f, 0.0f,
 	 0.5f, -0.5f, -0.5f,  0.0f, 1.0f, 0.0f,
